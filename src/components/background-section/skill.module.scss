@@ -1,0 +1,60 @@
+/* Container de Skills */
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  gap: 3rem;
+  z-index: 15;
+
+  &__title {
+    color: #f0c485;
+    font-size: 1.5rem;
+    text-align: start;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1rem;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 40%;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+}
+
+/* Categoria de Skills */
+.skillCategory {
+  background-color: rgba(18, 62, 93, 0.97);
+  padding: 1rem 0.5rem;
+  color: #eedaae;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.9rem;
+
+  .skillCategory__title {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #e13a4b;
+    font-size: 1.2rem;
+  }
+
+  .skillCategory__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skillCategory__item {
+    margin: 0.5rem 0;
+  }
+}

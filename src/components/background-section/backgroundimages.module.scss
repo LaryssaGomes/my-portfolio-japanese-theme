@@ -1,0 +1,129 @@
+.backgroundImages {
+  .details {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        width: 25%;
+        top: -120px;
+      }
+
+      &:nth-of-type(2) {
+        top: 800px;
+        width: 8%;
+        right: 50px;
+      }
+
+      &:nth-of-type(3) {
+        top: 600px;
+        width: 5%;
+      }
+
+      &:nth-of-type(4) {
+        top: 400px;
+        right: 100px;
+        width: 15%;
+      }
+
+      &:nth-of-type(5) {
+        top: 700px;
+        left: 300px;
+        width: 10%;
+      }
+
+      &:nth-of-type(6) {
+        position: relative;
+        top: 300px;
+        width: 10%;
+        right: 50px;
+      }
+
+      &:nth-of-type(7) {
+        top: 220px;
+        right: 0px;
+        width: 15%;
+      }
+
+      @media (max-width: 600px) {
+        &:nth-of-type(1) {
+          width: 45%;
+        }
+
+        &:nth-of-type(2) {
+          width: 20%;
+        }
+
+        &:nth-of-type(3) {
+          width: 20%;
+        }
+
+        &:nth-of-type(4) {
+          width: 35%;
+        }
+
+        &:nth-of-type(5) {
+          width: 30%;
+        }
+
+        &:nth-of-type(6) {
+          width: 30%;
+        }
+
+        &:nth-of-type(7) {
+          bottom: 0px;
+          width: 45%;
+        }
+      }
+
+      @media (max-width: 450px) {
+        &:nth-of-type(1) {
+          width: 45%;
+        }
+
+        &:nth-of-type(2) {
+          width: 20%;
+        }
+
+        &:nth-of-type(5) {
+          top: 1500px;
+          left: 10px;
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  .details_mobile {
+    display: none;
+
+    @media (max-width: 450px) {
+      display: block;
+      img {
+        &:nth-of-type(1) {
+          top: 1400px;
+          width: 45%;
+        }
+
+        &:nth-of-type(2) {
+          top: 1800px;
+          width: 20%;
+        }
+
+        &:nth-of-type(3) {
+          top: 1000px;
+          width: 5%;
+        }
+
+        &:nth-of-type(4) {
+          top: 1300px;
+          left: 10px;
+          width: 30%;
+        }
+      }
+    }
+  }
+}

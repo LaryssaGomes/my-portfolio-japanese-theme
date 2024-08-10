@@ -1,0 +1,85 @@
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  gap: 3rem;
+  z-index: 15;
+  align-items: flex-start;
+
+  h3 {
+    text-align: center;
+  }
+
+  .aboutMeContent {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+
+    .profilePhoto {
+      width: 18rem;
+      border-radius: 5px;
+    }
+
+    .aboutMeText {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      background-color: #f0c485;
+      border-radius: 5px;
+      align-items: center;
+      margin-left: -2rem;
+    }
+    .aboutMeText p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .aboutMeContent {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .aboutMeContent {
+      flex-direction: column;
+      padding: 2rem;
+      font-size: 0.7em;
+      background-color: #f0c485;
+      border-radius: 10px;
+      gap: 1rem;
+
+      .profilePhoto {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      .aboutMeText {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .aboutMeContent {
+      flex-direction: column;
+      padding: 1rem;
+
+      .profilePhoto {
+        border-radius: 18px;
+      }
+
+      .aboutMeText {
+        text-align: justify;
+
+        button {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

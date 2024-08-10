@@ -1,0 +1,88 @@
+.project {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  gap: 3rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    max-width: 800px;
+  }
+
+  .box-projeto {
+    display: flex;
+
+    > .box-projeto-card {
+      display: flex;
+      gap: 1rem;
+    }
+    .box-conteudo {
+      margin-left: 200px;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      H4 {
+        font-size: 20px;
+      }
+
+      .buttons {
+        gap: 1rem;
+        display: flex;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0px;
+      width: 200px;
+      left: 0px;
+      bottom: 20px;
+      height: calc(100% - 10px);
+      object-fit: cover;
+    }
+
+    @media (max-width: 850px) {
+      img {
+        width: calc(100% - 10px);
+        position: absolute;
+        height: 200px;
+      }
+      .box-projeto-card {
+        flex-direction: column;
+      }
+
+      .box-conteudo {
+        margin-top: 200px;
+        margin-left: unset;
+
+        H4 {
+          font-size: 20px;
+        }
+
+        .buttons {
+          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .tags {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    font-family: var(--font-display);
+  }
+  .cards {
+    display: grid;
+    gap: 2rem;
+    max-width: 800px;
+    grid-template-columns: 1fr;
+  }
+}

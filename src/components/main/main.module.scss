@@ -1,0 +1,39 @@
+.mainContainer {
+  position: relative;
+  height: 80vh; /* Garante que o main ocupe a altura total da janela */
+
+  .heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    .nameHighlight {
+      color: #da7252;
+    }
+  }
+
+  .image {
+    position: absolute;
+    bottom: -5.6vw;
+    height: auto;
+    transform: translateY(40%);
+  }
+
+  @media (max-width: 630px) {
+    height: 60vh;
+
+    .heading {
+      top: 45%;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    height: 70vh;
+  }
+}

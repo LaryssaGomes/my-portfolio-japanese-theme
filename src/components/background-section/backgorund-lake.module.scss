@@ -1,0 +1,26 @@
+.section {
+  position: relative;
+
+  h3 {
+    color: #f0c485;
+    font-size: 1.5rem;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 4rem 0;
+    background: linear-gradient(rgba(5, 52, 77, 0.9), #1a4c79);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    > img:nth-of-type(1) {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(50%);
+    }
+  }
+}
