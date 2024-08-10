@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./card-project.module.scss";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Button } from "@/components/forms/button";
 import { Box } from "../BoxProject/Box";
 import { Tag } from "../Tag/Tags";
@@ -15,7 +15,7 @@ interface CardProjectProps {
   tags: Tag[];
   infoLink: string;
   projectLink: string;
-  image: StaticImageData;
+  image: string;
 }
 
 export const CardProject: React.FC<CardProjectProps> = ({

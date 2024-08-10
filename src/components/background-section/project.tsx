@@ -29,8 +29,26 @@ export const Project = () => {
             { name: "Styles-component", color: "#202147" },
           ]}
           infoLink={""}
-          projectLink={""}
-          image={projeto}
+          projectLink={"https://nextjs-bird-exfhmmgon-laryssagomes.vercel.app/"}
+          image="/imagens/projetos/bird.png"
+        />
+        <CardProject
+          title={"Titulo"}
+          description="Sou uma desenvolvedora full stack Jr apaixonada por criar
+                  soluções inovadoras e eficientes para problemas reais.
+                  Atualmente, trabalho na Omega Energia, uma empresa que atua no
+                  setor de energia renovável, onde utilizo React Hooks, Nest.js,
+                  Next, TypeScript, Node e styled-com ...Sou uma desenvolvedora
+                  full stack Jr apaixonada por criar soluções inovadoras e
+                  eficientes para problemas reais. Atualmente, trabalho na Omega
+                  Energia, uma empresa que atua no setor de energia"
+          tags={[
+            { name: "Next", color: "#81CD39" },
+            { name: "Styles-component", color: "#202147" },
+          ]}
+          infoLink={""}
+          projectLink={"https://desafio-iota.vercel.app/"}
+          image="/imagens/projetos/lp_ponto_saber.png"
         />
       </div>
     </section>

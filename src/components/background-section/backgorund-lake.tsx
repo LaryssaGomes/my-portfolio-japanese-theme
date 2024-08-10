@@ -4,7 +4,7 @@ import styles from "./backgorund-lake.module.scss";
 import Image from "next/image";
 import BackgroundImages from "./BackgroundImages";
 import { Skills } from "./skills";
-import AboutMe from "./About-me";
+import AboutMe from "./about-me";
 
 export const SectionLake = () => {
   return (
