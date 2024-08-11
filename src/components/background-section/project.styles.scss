@@ -76,7 +76,8 @@
   .tags {
     display: flex;
     gap: 1rem;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
     font-family: var(--font-display);
   }
   .cards {
