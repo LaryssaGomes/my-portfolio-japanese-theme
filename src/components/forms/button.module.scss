@@ -6,9 +6,14 @@
   border-radius: 5px;
   font-family: var(--font-display);
   text-transform: uppercase;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: filter 0.3s ease; // Transição suave
 
+  svg {
+    margin-right: 0.5rem;
+  }
   &:hover {
     color: #fff;
     filter: brightness(1.4); // Escurece o botão em 20% ao passar o mouse
