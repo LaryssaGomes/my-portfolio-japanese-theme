@@ -2,6 +2,7 @@ import React from "react";
 import "./project.styles.scss";
 import { CardProject } from "@/components/cards/card-project";
 import { Tag } from "../Tag/Tags";
+import { url } from "inspector";
 
 export const Project = () => {
   return (
@@ -24,7 +25,7 @@ export const Project = () => {
           ]}
           infoLink={"https://github.com/LaryssaGomes/Nextjs-bird"}
           projectLink={"https://nextjs-bird-exfhmmgon-laryssagomes.vercel.app/"}
-          image="/imagens/projetos/bird.png"
+          image={{ url: "/imagens/projetos/bird.png", width: 424, height: 585 }}
         />
         <CardProject
           title={"Titulo"}
@@ -42,7 +43,11 @@ export const Project = () => {
           ]}
           infoLink={""}
           projectLink={"https://desafio-iota.vercel.app/"}
-          image="/imagens/projetos/lp_ponto_saber.png"
+          image={{
+            url: "/imagens/projetos/lp_ponto_saber.png",
+            width: 441,
+            height: 797,
+          }}
         />
         <CardProject
           title="Clone Netflix"
@@ -55,7 +60,11 @@ export const Project = () => {
           projectLink={
             "https://clone-netflix-o0dvwzxh2-laryssagomes-projects.vercel.app/watch/239526"
           }
-          image="/imagens/projetos/netlfix_clone.png"
+          image={{
+            url: "/imagens/projetos/netlfix_clone.png",
+            width: 1523,
+            height: 906,
+          }}
         />
       </div>
     </section>

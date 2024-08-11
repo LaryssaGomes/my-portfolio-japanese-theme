@@ -15,7 +15,11 @@ interface CardProjectProps {
   tags: Tag[];
   infoLink: string;
   projectLink: string;
-  image: string;
+  image: {
+    url: string;
+    width: number;
+    height: number;
+  };
 }
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -32,9 +36,9 @@ export const CardProject: React.FC<CardProjectProps> = ({
         <div className={styles.box_projeto_card}>
           <Image
             priority
-            src={image}
-            width={100}
-            height={100}
+            src={image.url}
+            width={image.width}
+            height={image.height}
             alt="projeto aves"
           />
           <div className={styles.box_conteudo}>
