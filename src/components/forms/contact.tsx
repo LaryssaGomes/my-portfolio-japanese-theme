@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./form-contact.module.scss";
 import { Box } from "../BoxProject/Box";
 import { Button } from "@/components/forms/button";
@@ -21,6 +21,7 @@ function FormButton() {
     </>
   );
 }
+
 export const Contact = () => {
   const [state, action] = useFormState(postSendEmail, {
     ok: false,
@@ -28,12 +29,20 @@ export const Contact = () => {
     data: null,
   });
 
+  const formRef =  useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    if (state.ok && formRef.current) {
+      formRef.current.reset();
+    }
+  }, [state.ok]);
+
   return (
     <section className={styles.contact} id="contact">
       <h3>Contatos</h3>
       <div className={styles.wrapper}>
         <Box>
-          <form action={action}>
+          <form ref={formRef} action={action}>
             <label htmlFor="name">
               Nome: <input type="text" id="name" name="name" required />
             </label>

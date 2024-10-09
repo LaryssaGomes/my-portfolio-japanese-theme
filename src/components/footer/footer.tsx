@@ -14,37 +14,31 @@ export const Footer = () => {
       <footer className={styles.footer__container}>
         <div className={styles.footer__grid}>
           <div className={styles.footer__social_links}>
-            <div>Facebook</div>
-            <div>Instagram</div>
             <div>Linkedin</div>
             <div>Pinterest</div>
           </div>
           <div className={styles.footer__content}>
-            <div>Dateenschutz</div>
-            <div>Impressum</div>
-            <div>Cookie</div>
-            <div>Policy AGBs</div>
+            <div>Dona das gatinhas</div>
+            <div>Kirara</div>
+            <div>Mona</div>
+            <div>Klee</div>
           </div>
           <div className={styles.footer__content}>
-            <div>Dateenschutz</div>
-            <div>Impressum</div>
-            <div>Cookie</div>
-            <div>Policy AGBs</div>
+            <div>FrontEnd</div>
+            <div>Next js</div>
+            <div>Sass</div>
+            <div>Figma</div>
           </div>
           <div className={styles.footer__content}>
-            <div>Dateenschutz</div>
-            <div>Impressum</div>
-            <div>Cookie</div>
-            <div>Policy AGBs</div>
+            <div>BackEnd</div>
+            <div>Next js</div>
+            <div>Resend</div>
+            <div>Libs diversas</div>
           </div>
         </div>
         <div className={styles.footer__bottom}>
-          <div>© 2020 Lift Media. All rights reserved</div>
+          <div>© 2024 LaryDev. All rights reserved</div>
           <div className={styles.footer__bottom_links}>
-            <div>Dateenschutz</div>
-            <div>Impressum</div>
-            <div>Cookie</div>
-            <div>Policy AGBs</div>
           </div>
         </div>
       </footer>

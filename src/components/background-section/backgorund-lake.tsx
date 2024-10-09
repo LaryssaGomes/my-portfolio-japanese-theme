@@ -16,9 +16,11 @@ export const SectionLake = () => {
           priority
           src="/imagens/background/templos-moon.svg"
           width={1920}
-          height={696}
+          height={1500}
           alt="Tree"
         />
+
+
 
         <AboutMe />
         <Skills />
