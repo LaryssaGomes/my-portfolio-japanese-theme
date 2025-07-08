@@ -193,3 +193,8 @@ textarea {
   outline: none;
   background: rgba(255, 246, 235, 0.36);
 }
+
+*:focus-visible {
+  outline: 2px dashed #e13a4b;
+  outline-offset: 3px;
+}

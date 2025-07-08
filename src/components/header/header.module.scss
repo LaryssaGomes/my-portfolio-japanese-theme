@@ -38,6 +38,11 @@
           &:hover::after {
             background: url("/imagens/bottom-menu.svg") center bottom no-repeat;
           }
+          &:focus-visible {
+            outline: 2px solid #e13a4b;
+            outline-offset: 4px;
+            border-radius: 4px;
+          }
         }
 
         & + .navItem::before {

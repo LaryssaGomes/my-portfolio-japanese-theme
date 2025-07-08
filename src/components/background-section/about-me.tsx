@@ -28,12 +28,11 @@ const AboutMe = () => {
         />
         <div className={styles.aboutMeText}>
           <p>
-            Sou uma desenvolvedora full stack Jr apaixonada por criar soluções
-            inovadoras e eficientes para problemas reais. Atualmente, trabalho
-            na Omega Energia, uma empresa que atua no setor de energia renovável
-            de um sistema de documentação histórica, usando Django, Python e JS.
-            Nesses projetos, adquiri competências em MVC, CSS-in-JS, banco de
-            dados, API e testes automatizados.
+            Sou Laryssa Gomes, desenvolvedora full stack. Tenho paixão por
+            transformar ideias complexas em soluções bem estruturadas, com
+            código limpo, escalável e alinhado a boas práticas. Gosto de unir o
+            detalhe visual ao pensamento estratégico — criando experiências que
+            não só funcionam bem, mas que também contam uma história.
           </p>
           <Button onClick={handleDownload} color="#E13A4B">
             Baixar Curriculo

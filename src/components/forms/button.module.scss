@@ -18,6 +18,12 @@
     color: #fff;
     filter: brightness(1.4); // Escurece o botão em 20% ao passar o mouse
   }
+    &:focus-visible {
+        outline: 2px solid #e13a4b;
+        outline-offset: 4px;
+        border-radius: 4px;
+         color: #fff;
+    }
 }
 
 $cyan: #e13a4e;
@@ -41,6 +47,12 @@ $borderW: 2px;
   transition: color 0.5s;
   cursor: pointer;
   border-radius: 5px;
+
+      &:focus-visible {
+        outline: 2px solid #e13a4b;
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
 
   &:before {
     content: "";

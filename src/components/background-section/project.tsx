@@ -2,7 +2,6 @@ import React from "react";
 import "./project.styles.scss";
 import { CardProject } from "@/components/cards/card-project";
 import { Tag } from "../Tag/Tags";
-import { url } from "inspector";
 
 export const Project = () => {
   return (
@@ -28,18 +27,13 @@ export const Project = () => {
           image={{ url: "/imagens/projetos/bird.png", width: 424, height: 585 }}
         />
         <CardProject
-          title={"Titulo"}
-          description="Sou uma desenvolvedora full stack Jr apaixonada por criar
-                  soluções inovadoras e eficientes para problemas reais.
-                  Atualmente, trabalho na Omega Energia, uma empresa que atua no
-                  setor de energia renovável, onde utilizo React Hooks, Nest.js,
-                  Next, TypeScript, Node e styled-com ...Sou uma desenvolvedora
-                  full stack Jr apaixonada por criar soluções inovadoras e
-                  eficientes para problemas reais. Atualmente, trabalho na Omega
-                  Energia, uma empresa que atua no setor de energia"
+          title="Landing Page — Ponto Saber"
+          description={`Este projeto é uma landing page responsiva desenvolvida com Next.js e styled-components, criada como parte de um desafio técnico. A proposta era construir uma interface clara, moderna e funcional, focada em performance e acessibilidade.
+
+Com esse projeto, fui selecionada e ganhei 1 ano de acesso à plataforma da Rocketseat em 2023. Essa conquista marcou um passo importante no meu desenvolvimento como desenvolvedora full stack, fortalecendo ainda mais minha base em tecnologias modernas como React, Next.js e TypeScript.`}
           tags={[
             { name: "Next", color: "#81CD39" },
-            { name: "Styles-component", color: "#202147" },
+            { name: "Styled-components", color: "#202147" },
           ]}
           infoLink={""}
           projectLink={"https://desafio-iota.vercel.app/"}
@@ -49,6 +43,7 @@ export const Project = () => {
             height: 797,
           }}
         />
+
         <CardProject
           title="Clone Netflix"
           description="Netflix Clone é uma aplicação web desenvolvida com React.js que recria a interface visual da página inicial da Netflix. O objetivo do projeto é oferecer uma experiência visual semelhante à plataforma de streaming, utilizando dados fornecidos pela API TMDB. A aplicação exibe uma variedade de filmes e séries de TV, organizados em categorias como 'Populares' e 'Recomendados'. A interface é responsiva, garantindo uma navegação fluida em diferentes dispositivos, desde desktops até smartphones."
