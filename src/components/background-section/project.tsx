@@ -1,16 +1,10 @@
 import React from "react";
 import "./project.styles.scss";
 import { CardProject } from "@/components/cards/card-project";
-import { Tag } from "../Tag/Tags";
-
 export const Project = () => {
   return (
     <section className="project" id="projects">
       <h3>Projetos</h3>
-      <div className="tags">
-        <Tag color="#81CD39"> Next</Tag>
-        <Tag color="#202147"> Styles-component</Tag>
-      </div>
 
       <div className="cards">
         <CardProject
