@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./form-contact.module.scss";
 import { Box } from "../BoxProject/Box";
 import { Button } from "@/components/forms/button";
@@ -24,23 +24,12 @@ export const Contact = () => {
     data: null,
   });
 
-  const formRef = useRef<HTMLFormElement>(null);
-
-  // Resetar o form se enviar com sucesso
-  useEffect(() => {
-    if (state.ok && formRef.current) {
-      formRef.current.reset();
-    }
-  }, [state.ok]);
-
-  const isPending = state?.pending;
-
   return (
     <section className={styles.contact} id="contact">
       <h3>Contatos</h3>
       <div className={styles.wrapper}>
         <Box>
-          <form action={action} ref={formRef}>
+          <form action={action}>
             <label htmlFor="name">
               Nome:{" "}
               <input
