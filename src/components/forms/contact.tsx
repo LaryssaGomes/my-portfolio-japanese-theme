@@ -18,18 +18,29 @@ function FormButton() {
 }
 
 export const Contact = () => {
+  const { pending } = useFormStatus();
+  const isPending = pending || false;
+
   const [state, action] = useFormState(postSendEmail, {
     ok: false,
     error: "",
     data: null,
   });
 
+  const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    if (state.ok && formRef.current) {
+      formRef.current.reset();
+    }
+  }, [state.ok]);
+
   return (
     <section className={styles.contact} id="contact">
       <h3>Contatos</h3>
       <div className={styles.wrapper}>
         <Box>
-          <form action={action}>
+          <form ref={formRef} action={action}>
             <label htmlFor="name">
               Nome:{" "}
               <input
