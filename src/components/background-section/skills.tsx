@@ -26,32 +26,61 @@ export const Skills = () => {
         <SkillCategory
           title="Front-end"
           skills={[
-            "Next.js / React",
+            "HTML5",
+            "CSS3",
+            "SCSS / Sass",
+            "React.js",
+            "Next.js",
+            "Vue.js",
+            "TypeScript",
             "Styled Components",
-            "Sass / Less",
-            "Micro Frontend Architecture",
+            "CSS Modules",
+            "Tailwind",
+            "Material UI",
+            "Bootstrap",
+            "Micro-frontend",
           ]}
         />
         <SkillCategory
           title="Back-end"
-          skills={["Nest.js", "Node.js", "Python"]}
-        />
-        <SkillCategory
-          title="Web Design"
-          skills={["Web Design", "Illustrations", "Figma"]}
-        />
-        <SkillCategory
-          title="SEO and Testing"
-          skills={["SEO Optimization", "Testing", "WordPress"]}
-        />
-        <SkillCategory
-          title="Soft Skills"
           skills={[
-            "Trabalho em equipe",
-            "Resolução de problemas",
-            "Adaptabilidade",
-            "Gestão do tempo",
-            "Criatividade",
+            "Node.js",
+            "NestJS",
+            "Django",
+            "Python",
+            "Java",
+            "Spring Boot",
+            "Go",
+            "APIs REST",
+          ]}
+        />
+        <SkillCategory
+          title="Banco de Dados"
+          skills={["MongoDB", "PostgreSQL", "MySQL"]}
+        />
+        <SkillCategory
+          title="Testes"
+          skills={["Jest", "Cypress", "Testing Library"]}
+        />
+        <SkillCategory
+          title="Ferramentas & Outros"
+          skills={[
+            "Git",
+            "GitHub",
+            "Linux",
+            "WordPress",
+            "Puppeteer",
+            "Webcrawler",
+            "AWS",
+          ]}
+        />
+        <SkillCategory
+          title="Metodologias"
+          skills={[
+            "Ágeis (Scrum / Kanban)",
+            "Arquitetura de Microsserviços",
+            "MVC",
+            "Modelagem de Domínio",
           ]}
         />
       </div>

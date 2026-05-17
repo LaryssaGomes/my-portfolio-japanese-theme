@@ -28,11 +28,20 @@ const AboutMe = () => {
         />
         <div className={styles.aboutMeText}>
           <p>
-            Sou Laryssa Gomes, desenvolvedora full stack. Tenho paixão por
-            transformar ideias complexas em soluções bem estruturadas, com
-            código limpo, escalável e alinhado a boas práticas. Gosto de unir o
-            detalhe visual ao pensamento estratégico — criando experiências que
-            não só funcionam bem, mas que também contam uma história.
+            Sou Laryssa Gomes, desenvolvedora Full Stack Sênior com sólida
+            experiência na construção de aplicações escaláveis, resilientes e
+            de alta performance. Especializei-me em arquitetar soluções de
+            ponta a ponta, unindo um ecossistema front-end moderno (React,
+            Next.js, Styled-components) a back-ends robustos (Node.js, NestJS,
+            TypeScript, Python/Django).
+          </p>
+          <p>
+            Atualmente, na Aposta Premia, lidero a evolução arquitetural da
+            plataforma — conduzindo a migração de um monolito Node.js para
+            uma arquitetura distribuída baseada em microsserviços, em um
+            ambiente dinâmico de alto volume de acessos. Minha bagagem inclui
+            passagens estratégicas pelo setor de energia renovável na Omega
+            Energia e projetos de pesquisa e documentação histórica no IFAL.
           </p>
           <Button onClick={handleDownload} color="#E13A4B">
             Baixar Curriculo
