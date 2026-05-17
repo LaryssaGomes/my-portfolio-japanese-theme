@@ -26,15 +26,10 @@ export const Skills = () => {
         <SkillCategory
           title="Front-end"
           skills={[
-            "HTML5",
-            "CSS3",
-            "SCSS / Sass",
             "React.js",
             "Next.js",
             "Vue.js",
-            "TypeScript",
             "Styled Components",
-            "CSS Modules",
             "Tailwind",
             "Material UI",
             "Bootstrap",
