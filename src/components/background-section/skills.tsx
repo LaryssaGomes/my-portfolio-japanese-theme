@@ -26,12 +26,10 @@ export const Skills = () => {
         <SkillCategory
           title="Front-end"
           skills={[
-            "React.js",
-            "Next.js",
+            "Next.js/React.js",
             "Vue.js",
             "Styled Components",
-            "Tailwind",
-            "Material UI",
+            "Material UI/Tailwind",
             "Bootstrap",
             "Micro-frontend",
           ]}
@@ -39,12 +37,9 @@ export const Skills = () => {
         <SkillCategory
           title="Back-end"
           skills={[
-            "Node.js",
-            "NestJS",
-            "Django",
-            "Python",
-            "Java",
-            "Spring Boot",
+            "NestJS/TypeScript",
+            "Django/Python",
+            "Java/Spring Boot",
             "Go",
             "APIs REST",
           ]}
@@ -60,8 +55,7 @@ export const Skills = () => {
         <SkillCategory
           title="Ferramentas & Outros"
           skills={[
-            "Git",
-            "GitHub",
+            "GitHub/Git",
             "Linux",
             "WordPress",
             "Puppeteer",
