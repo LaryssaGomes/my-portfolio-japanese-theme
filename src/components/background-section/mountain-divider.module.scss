@@ -1,0 +1,105 @@
+.landscape {
+  position: relative;
+  width: 100%;
+  height: clamp(220px, 1200px, 760px);
+  overflow: hidden;
+  transition: background-color 0.8s ease;
+
+  @keyframes driftFog {
+    from {
+      background-position-x: 0;
+    }
+
+    to {
+      background-position-x: 900px;
+    }
+  }
+
+  .fog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22%;
+    height: 38%;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.28;
+    background-image: radial-gradient(
+        ellipse 220px 60px at 10% 50%,
+        rgba(255, 255, 255, 0.9),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 300px 70px at 55% 40%,
+        rgba(255, 255, 255, 0.8),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 260px 55px at 85% 60%,
+        rgba(255, 255, 255, 0.85),
+        transparent 70%
+      );
+    background-repeat: repeat-x;
+    background-size: 900px 100%;
+    filter: blur(6px);
+    animation: driftFog 45s linear infinite;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  // stacking (back to front): fog < sakura (right) < temple < timeline (sibling, z-index 4) < branch (left)
+  .layerFrontRight {
+    z-index: 2;
+    right: 0px;
+    top: -40px;
+    height: clamp(130px, 18vw, 240px);
+    opacity: 0.7;
+    filter: saturate(0.85) brightness(0.97);
+    transform: scaleX(-1);
+  }
+
+  .layerTemple {
+    z-index: 3;
+    left: -15%;
+    height: clamp(150px, 34vw, 360px);
+    transform: translateX(-5%);
+  }
+
+  .layerFront {
+    z-index: 5;
+    left: 12%;
+    top: -70px;
+    height: clamp(190px, 28vw, 380px);
+    transform: translate(-50%, 6%);
+  }
+
+  @media (max-width: 630px) {
+    height: clamp(190px, 58vw, 320px);
+
+    .layerTemple {
+      height: clamp(140px, 40vw, 250px);
+    }
+
+    .layerFront {
+      left: 18%;
+      top: 0;
+      height: clamp(170px, 50vw, 270px);
+    }
+
+    .layerFrontRight {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fog {
+      animation: none;
+    }
+  }
+}

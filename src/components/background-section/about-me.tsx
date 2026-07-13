@@ -30,11 +30,11 @@ const AboutMe = () => {
           <p>
             Sou Laryssa Gomes, desenvolvedora Full Stack Sênior, focada em
             aplicações escaláveis e de alta performance com React, Next.js,
-            Node.js e NestJS. Atualmente, na Aposta Premia, lidero a migração
-            de um monolito para microsserviços em um ambiente de alto volume
-            de acessos.
+            Node.js e NestJS. Atualmente, na Aposta Premia, lidero a migração de
+            um monolito para microsserviços em um ambiente de alto volume de
+            acessos.
           </p>
-          <Button onClick={handleDownload} color="#E13A4B">
+          <Button onClick={handleDownload} color="var(--accent-button)">
             Baixar Curriculo
           </Button>
         </div>

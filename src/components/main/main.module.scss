@@ -2,6 +2,29 @@
   position: relative;
   height: 80vh; /* Garante que o main ocupe a altura total da janela */
 
+  .stars {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-image: radial-gradient(1.5px 1.5px at 10% 20%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 25% 60%, #fff, transparent),
+      radial-gradient(1px 1px at 40% 12%, #fff, transparent),
+      radial-gradient(2px 2px at 55% 35%, #fff, transparent),
+      radial-gradient(1px 1px at 70% 55%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 85% 18%, #fff, transparent),
+      radial-gradient(1px 1px at 15% 80%, #fff, transparent),
+      radial-gradient(2px 2px at 33% 42%, #fff, transparent),
+      radial-gradient(1px 1px at 48% 70%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 65% 8%, #fff, transparent),
+      radial-gradient(1px 1px at 80% 65%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 95% 45%, #fff, transparent),
+      radial-gradient(1px 1px at 5% 45%, #fff, transparent),
+      radial-gradient(1px 1px at 60% 25%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 90% 75%, #fff, transparent);
+    transition: opacity 0.8s ease;
+  }
+
   .heading {
     position: absolute;
     top: 40%;
@@ -12,7 +35,8 @@
     line-height: 2.5rem;
 
     .nameHighlight {
-      color: #da7252;
+      color: var(--accent-name);
+      transition: color 0.8s ease;
     }
   }
 
@@ -21,6 +45,29 @@
     bottom: -5.6vw;
     height: auto;
     transform: translateY(40%);
+  }
+
+  .dayImage {
+    display: block;
+  }
+
+  .nightImage {
+    display: none;
+  }
+
+  :global(html[data-daytime="night"]) & {
+    .dayImage {
+      display: none;
+    }
+
+    .nightImage {
+      display: block;
+    }
+
+    .stars {
+      opacity: 1;
+      animation: twinkle 4s ease-in-out infinite;
+    }
   }
 
   @media (max-width: 630px) {
@@ -35,5 +82,15 @@
 
   @media (max-width: 1000px) {
     height: 70vh;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
   }
 }

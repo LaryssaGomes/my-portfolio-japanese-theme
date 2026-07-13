@@ -53,7 +53,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
             </div>
             <div className={styles.buttons}>
               {infoLink && (
-                <Button color="#E13A4B" href={infoLink} component="a">
+                <Button color="var(--accent-button)" href={infoLink} component="a">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"

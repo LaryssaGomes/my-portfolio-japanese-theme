@@ -2,8 +2,9 @@
   &__container {
     padding: 1rem;
     margin-top: -2rem;
-    background-color: #154363;
+    background-color: var(--footer-bg);
     color: #fff;
+    transition: background-color 0.8s ease;
     display: flex;
     flex-direction: column;
     align-items: center;

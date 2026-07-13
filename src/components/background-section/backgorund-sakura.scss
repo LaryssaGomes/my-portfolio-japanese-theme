@@ -36,12 +36,13 @@
   > img:nth-of-type(4) {
     position: absolute;
     width: auto;
-    max-width: 20vw;
-
-    left: 0px;
+    max-width: 18vw;
+    right: 4%;
+    bottom: 0px;
 
     z-index: -2;
   }
+
   h3 {
     font-size: 1.5rem;
   }

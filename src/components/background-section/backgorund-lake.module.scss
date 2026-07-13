@@ -2,27 +2,24 @@
   position: relative;
 
   h3 {
-    color: #f0c485;
+    color: var(--section-heading);
     font-size: 1.5rem;
+    transition: color 0.8s ease;
   }
-
-
 
   .conteudo {
     display: flex;
     flex-direction: column;
     gap: 10rem;
     padding: 4rem 0;
-    background: linear-gradient(rgba(5, 52, 77, 0.9), #1a4c79);
+    background: linear-gradient(
+      var(--lake-gradient-top),
+      var(--lake-gradient-bottom) 88%,
+      var(--sky-bg)
+    );
+    transition: background-color 0.8s ease;
     justify-content: center;
     align-items: center;
     position: relative;
-
-    > img:nth-of-type(1) {
-      position: absolute;
-      bottom: 0;
-      width: 100vw;
-      transform: translateY(50%);
-    }
   }
 }

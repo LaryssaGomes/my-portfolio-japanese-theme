@@ -11,7 +11,7 @@ import clsx from "clsx";
 function FormButton() {
   const { pending } = useFormStatus();
   return (
-    <Button disabled={pending} color="#E13A4B">
+    <Button disabled={pending} color="var(--accent-button)">
       {pending ? "...Enviando" : "Enviar"}
     </Button>
   );

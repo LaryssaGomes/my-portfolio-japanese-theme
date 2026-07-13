@@ -11,16 +11,16 @@ export const SectionSakura = () => {
       <Contact />
       <Image
         priority
-        src="/imagens/background/sakura-tree-01.svg"
-        width={296}
-        height={868}
+        src="/imagens/sakura.svg"
+        width={1212}
+        height={1062}
         alt="Tree Sakura"
       />
       <Image
         priority
-        src="/imagens/background/sakura-tree.svg"
-        width={444}
-        height={362}
+        src="/imagens/arvoredafrente.svg"
+        width={602}
+        height={372}
         alt="Tree Sakura"
       />
       <Image
@@ -32,9 +32,9 @@ export const SectionSakura = () => {
       />
       <Image
         priority
-        src="/imagens/background/sakura-tree-02.svg"
-        width={522}
-        height={319}
+        src="/imagens/arvoreescada.svg"
+        width={305}
+        height={238}
         alt="Tree Sakura"
       />
     </section>

@@ -22,6 +22,11 @@ export const Header = () => {
             </a>
           </li>
           <li className={styles.navItem}>
+            <a className={styles.navLink} href="#experience">
+              Experience
+            </a>
+          </li>
+          <li className={styles.navItem}>
             <a className={styles.navLink} href="#projects">
               Projects
             </a>
