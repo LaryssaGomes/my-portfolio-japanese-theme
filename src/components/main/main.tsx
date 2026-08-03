@@ -12,20 +12,20 @@ export const Main = () => {
       </h1>
       <Image
         priority
-        src="/imagens/tree.svg"
+        src="/imagens/tree.webp"
         layout="responsive"
-        width={1920}
-        height={702}
+        width={2400}
+        height={882}
         sizes="100vw"
         alt="Tree illustration"
         className={clsx(styles.image, styles.dayImage)}
       />
       <Image
         priority
-        src="/imagens/tree-night.svg"
+        src="/imagens/tree-night.webp"
         layout="responsive"
-        width={1920}
-        height={702}
+        width={2400}
+        height={882}
         sizes="100vw"
         alt="Tree illustration"
         className={clsx(styles.image, styles.nightImage)}

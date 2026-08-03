@@ -94,13 +94,13 @@ html {
 
 :root,
 html[data-daytime="day"] {
-  --sky-bg: #f0c485;
-  --sky-text: #05344d;
+  --sky-bg: #8ecae6;
+  --sky-text: #063a4d;
   --accent-name: #da7252;
   --accent-button: #e13a4b;
   --lake-gradient-top: rgba(5, 52, 77, 0.9);
   --lake-gradient-bottom: #1a4c79;
-  --section-heading: #f0c485;
+  --section-heading: #eaf6ff;
   --footer-bg: #154363;
   --skill-card-bg: rgba(18, 62, 93, 0.97);
   --skill-card-text: #eedaae;
@@ -120,29 +120,29 @@ html[data-daytime="dawn"] {
 }
 
 html[data-daytime="dusk"] {
-  --sky-bg: #e8895c;
-  --sky-text: #3a2015;
-  --accent-name: #d9552e;
-  --accent-button: #cf3a24;
-  --lake-gradient-top: rgba(45, 30, 55, 0.9);
-  --lake-gradient-bottom: #4a2f5c;
-  --section-heading: #ffd9b3;
-  --footer-bg: #3a2547;
-  --skill-card-bg: rgba(45, 30, 55, 0.95);
-  --skill-card-text: #ffd9b3;
+  --sky-bg: #e88585;
+  --sky-text: #3a1f28;
+  --accent-name: #d9527a;
+  --accent-button: #c9375f;
+  --lake-gradient-top: rgba(50, 30, 50, 0.9);
+  --lake-gradient-bottom: #5c2f52;
+  --section-heading: #ffd6e0;
+  --footer-bg: #3a2138;
+  --skill-card-bg: rgba(50, 30, 50, 0.95);
+  --skill-card-text: #ffd6e0;
 }
 
 html[data-daytime="night"] {
-  --sky-bg: #0d1b30;
-  --sky-text: #e3e9f5;
+  --sky-bg: #1c3253;
+  --sky-text: #eef2fa;
   --accent-name: #f2b077;
   --accent-button: #c9354a;
-  --lake-gradient-top: rgba(18, 32, 58, 0.88);
-  --lake-gradient-bottom: #0a1730;
-  --section-heading: #cfe0ef;
-  --footer-bg: #060f1e;
-  --skill-card-bg: rgba(6, 24, 40, 0.97);
-  --skill-card-text: #cfe0ef;
+  --lake-gradient-top: rgba(28, 46, 76, 0.88);
+  --lake-gradient-bottom: #17294a;
+  --section-heading: #dfeaf6;
+  --footer-bg: #0e1c33;
+  --skill-card-bg: rgba(14, 34, 56, 0.97);
+  --skill-card-text: #dfeaf6;
 }
 
 :target {

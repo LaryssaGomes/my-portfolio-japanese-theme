@@ -7,10 +7,11 @@
 }
 
 .title {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  text-align: left;
   color: var(--section-heading);
   font-size: 1.5rem;
-  margin-bottom: 2.5rem;
   transition: color 0.8s ease;
 }
 
@@ -94,6 +95,12 @@
   padding: 1.5rem 1.75rem;
   box-shadow: 0 4px 14px rgba(61, 50, 40, 0.14);
   border-left: 4px solid var(--accent-button);
+  transition: background-color 0.8s ease;
+
+  :global(html[data-daytime="night"]) & {
+    background: rgba(20, 38, 61, 0.94);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  }
 }
 
 .role {
@@ -101,16 +108,28 @@
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
+
+  :global(html[data-daytime="night"]) & {
+    color: #eef2fa;
+  }
 }
 
 .meta {
   color: #6b5847;
   font-size: 0.85rem;
   margin-bottom: 0.4rem;
+
+  :global(html[data-daytime="night"]) & {
+    color: #b7c4d6;
+  }
 }
 
 .period {
   color: #8a7460;
+
+  :global(html[data-daytime="night"]) & {
+    color: #93a3b8;
+  }
 }
 
 .mode {
@@ -136,6 +155,10 @@
     font-size: 0.85rem;
     line-height: 1.45;
     color: #3a2a20;
+
+    :global(html[data-daytime="night"]) & {
+      color: #dbe4f0;
+    }
 
     &::before {
       content: "◆";

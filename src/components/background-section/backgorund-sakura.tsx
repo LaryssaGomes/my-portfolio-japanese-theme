@@ -11,9 +11,9 @@ export const SectionSakura = () => {
       <Contact />
       <Image
         priority
-        src="/imagens/sakura.svg"
-        width={1212}
-        height={1062}
+        src="/imagens/sakura.webp"
+        width={800}
+        height={702}
         alt="Tree Sakura"
       />
       <Image
@@ -32,9 +32,9 @@ export const SectionSakura = () => {
       />
       <Image
         priority
-        src="/imagens/arvoreescada.svg"
-        width={305}
-        height={238}
+        src="/imagens/arvoreescada.webp"
+        width={900}
+        height={703}
         alt="Tree Sakura"
       />
     </section>

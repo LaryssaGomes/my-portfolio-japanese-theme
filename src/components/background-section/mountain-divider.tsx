@@ -7,9 +7,9 @@ export const MountainDivider = () => {
     <div className={styles.landscape}>
       <div className={styles.fog} aria-hidden="true" />
       <Image
-        src="/imagens/montanha03templo.svg"
-        width={761}
-        height={483}
+        src="/imagens/montanha03templo.webp"
+        width={900}
+        height={744}
         alt=""
         className={styles.layerTemple}
         aria-hidden="true"
@@ -23,9 +23,9 @@ export const MountainDivider = () => {
         aria-hidden="true"
       />
       <Image
-        src="/imagens/sakura.svg"
-        width={1212}
-        height={1062}
+        src="/imagens/arvoredafrente.svg"
+        width={602}
+        height={372}
         alt=""
         className={styles.layerFrontRight}
         aria-hidden="true"

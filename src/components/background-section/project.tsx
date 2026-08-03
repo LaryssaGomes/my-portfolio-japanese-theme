@@ -50,9 +50,9 @@ Com esse projeto, fui selecionada e ganhei 1 ano de acesso à plataforma da Rock
             "https://clone-netflix-o0dvwzxh2-laryssagomes-projects.vercel.app/watch/239526"
           }
           image={{
-            url: "/imagens/projetos/netlfix_clone.png",
-            width: 1523,
-            height: 906,
+            url: "/imagens/projetos/netlfix_clone.webp",
+            width: 900,
+            height: 535,
           }}
         />
       </div>

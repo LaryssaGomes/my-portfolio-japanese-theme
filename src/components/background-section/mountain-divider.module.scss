@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: clamp(220px, 1200px, 760px);
+  margin-top: -260px;
   overflow: hidden;
   transition: background-color 0.8s ease;
 
@@ -48,6 +49,7 @@
   img {
     position: absolute;
     bottom: 0;
+    width: auto;
     height: auto;
     pointer-events: none;
     user-select: none;
@@ -56,44 +58,47 @@
   // stacking (back to front): fog < sakura (right) < temple < timeline (sibling, z-index 4) < branch (left)
   .layerFrontRight {
     z-index: 2;
-    right: 0px;
-    top: -40px;
-    height: clamp(130px, 18vw, 240px);
-    opacity: 0.7;
+    right: -4%;
+    top: 0;
+    height: clamp(200px, 28vw, 340px);
+    opacity: 0.85;
     filter: saturate(0.85) brightness(0.97);
     transform: scaleX(-1);
   }
 
   .layerTemple {
     z-index: 3;
-    left: -15%;
+    left: -12vw;
     height: clamp(150px, 34vw, 360px);
-    transform: translateX(-5%);
   }
 
   .layerFront {
     z-index: 5;
-    left: 12%;
-    top: -70px;
-    height: clamp(190px, 28vw, 380px);
-    transform: translate(-50%, 6%);
+    left: -2%;
+    top: 0;
+    height: clamp(260px, 40vw, 520px);
+    transform: translateX(-8%);
   }
 
   @media (max-width: 630px) {
     height: clamp(190px, 58vw, 320px);
+    margin-top: -40px;
 
     .layerTemple {
       height: clamp(140px, 40vw, 250px);
+      left: -12vw;
     }
 
     .layerFront {
-      left: 18%;
-      top: 0;
-      height: clamp(170px, 50vw, 270px);
+       display: none;
+      
     }
 
     .layerFrontRight {
-      display: none;
+      left: 40%;
+      top: 0;
+      height: clamp(140px, 38vw, 210px);
+      z-index: 3;
     }
   }
 
