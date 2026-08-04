@@ -2,8 +2,12 @@
   position: relative; /* Para criar um contexto de posicionamento */
   border: 1px solid #bb2a2a; /* Primeira borda */
   padding: 20px; /* Espaço interno do elemento */
-  background: var(--skill-card-bg);
+  background: transparent;
   transition: background-color 0.8s ease;
+
+  :global(html[data-daytime="night"]) & {
+    background: var(--skill-card-bg);
+  }
 }
 
 .double-border::after {
