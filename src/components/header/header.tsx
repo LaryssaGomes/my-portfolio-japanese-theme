@@ -1,43 +1,51 @@
+"use client";
 import React from "react";
 import styles from "./header.module.scss";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { LanguageToggle } from "@/components/language-toggle/language-toggle";
 
 export const Header = () => {
+  const { t } = useLanguage();
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <a className={styles.navLink} href="/">
-              Home
+              {t.nav.home}
             </a>
           </li>
           <li className={styles.navItem}>
             <a className={styles.navLink} href="#about">
-              About
+              {t.nav.about}
             </a>
           </li>
           <li className={styles.navItem}>
             <a className={styles.navLink} href="#skills">
-              Skills
+              {t.nav.skills}
             </a>
           </li>
           <li className={styles.navItem}>
             <a className={styles.navLink} href="#experience">
-              Experience
+              {t.nav.experience}
             </a>
           </li>
           <li className={styles.navItem}>
             <a className={styles.navLink} href="#projects">
-              Projects
+              {t.nav.projects}
             </a>
           </li>
           <li className={styles.navItem}>
             <a className={styles.navLink} href="#contact">
-              Contact
+              {t.nav.contact}
             </a>
           </li>
         </ul>
       </nav>
+      <div className={styles.langToggle}>
+        <LanguageToggle />
+      </div>
     </header>
   );
 };

@@ -20,6 +20,8 @@ interface CardProjectProps {
     width: number;
     height: number;
   };
+  viewCodeLabel: string;
+  viewSiteLabel: string;
 }
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -29,6 +31,8 @@ export const CardProject: React.FC<CardProjectProps> = ({
   infoLink,
   projectLink,
   image,
+  viewCodeLabel,
+  viewSiteLabel,
 }) => {
   return (
     <Box>
@@ -86,11 +90,11 @@ export const CardProject: React.FC<CardProjectProps> = ({
                     </g>
                   </svg>
                   {"  "}
-                  Ver código
+                  {viewCodeLabel}
                 </Button>
               )}
               <Button color="#154363" href={projectLink} component="a">
-                Ver site
+                {viewSiteLabel}
               </Button>
             </div>
           </div>

@@ -1,10 +1,14 @@
 "use client";
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/forms/button";
 import styles from "./about-me.module.scss";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const AboutMe = () => {
+  const { t } = useLanguage();
+
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/curriculo.pdf"; // Caminho do seu arquivo PDF na pasta public
@@ -16,7 +20,7 @@ const AboutMe = () => {
 
   return (
     <div className={styles.aboutMeContainer} id="about">
-      <h3>Sobre mim</h3>
+      <h3>{t.about.title}</h3>
       <div className={styles.aboutMeContent}>
         <Image
           priority
@@ -27,15 +31,9 @@ const AboutMe = () => {
           className={styles.profilePhoto}
         />
         <div className={styles.aboutMeText}>
-          <p>
-            Sou Laryssa Gomes, desenvolvedora Full Stack Sênior, focada em
-            aplicações escaláveis e de alta performance com React, Next.js,
-            Node.js e NestJS. Atualmente, na Aposta Premia, lidero a migração de
-            um monolito para microsserviços em um ambiente de alto volume de
-            acessos.
-          </p>
+          <p>{t.about.text}</p>
           <Button onClick={handleDownload} color="var(--accent-button)">
-            Baixar Curriculo
+            {t.about.downloadCv}
           </Button>
         </div>
       </div>

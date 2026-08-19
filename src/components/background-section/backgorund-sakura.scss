@@ -10,7 +10,8 @@
   > img:nth-of-type(1) {
     position: absolute;
     width: auto;
-    max-width: 20vw;
+    max-width: 50vw;
+    height: auto;
     right: 0px;
     top: 0px;
     z-index: -2;
@@ -29,18 +30,40 @@
     max-width: 20vw;
     top: 10%;
     left: 10%;
-
+    transform: rotate(-90deg);
     z-index: -2;
   }
 
   > img:nth-of-type(4) {
     position: absolute;
     width: auto;
-    max-width: 26vw;
-    right: 0px;
+    max-width: 30vw;
+    height: auto;
+    right: -10vw;
     bottom: 0px;
-
+    transform: rotate(-90deg);
     z-index: -2;
+  }
+
+  > img:nth-of-type(5) {
+    position: absolute;
+    width: auto;
+    max-width: 18vw;
+    height: auto;
+    top: 42%;
+    right: 5%;
+    transform: scaleX(-1) rotate(-90deg);
+    z-index: -2;
+  }
+
+  @media (max-width: 768px) {
+    > img:nth-of-type(4) {
+      max-width: 45vw;
+    }
+
+    > img:nth-of-type(5) {
+      max-width: 28vw;
+    }
   }
 
   h3 {

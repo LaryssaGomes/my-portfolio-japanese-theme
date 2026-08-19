@@ -3,6 +3,14 @@
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  .langToggle {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .nav {
     max-width: 80%;
@@ -60,6 +68,14 @@
 
   @media (max-width: 600px) {
     margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    .langToggle {
+      position: static;
+      transform: none;
+    }
 
     .nav {
       .navList {

@@ -120,15 +120,15 @@ html[data-daytime="dawn"] {
 }
 
 html[data-daytime="dusk"] {
-  --sky-bg: #e88585;
+  --sky-bg: #f0c485;
   --sky-text: #3a1f28;
   --accent-name: #d9527a;
   --accent-button: #c9375f;
-  --lake-gradient-top: rgba(50, 30, 50, 0.9);
-  --lake-gradient-bottom: #5c2f52;
+  --lake-gradient-top: rgba(26, 40, 68, 0.9);
+  --lake-gradient-bottom: #24406b;
   --section-heading: #ffd6e0;
   --footer-bg: #3a2138;
-  --skill-card-bg: rgba(50, 30, 50, 0.95);
+  --skill-card-bg: rgba(20, 32, 56, 0.97);
   --skill-card-text: #ffd6e0;
 }
 

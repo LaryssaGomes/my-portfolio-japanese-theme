@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import styles from "./footer.module.scss";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <div className={styles.footer}>
       <Image
@@ -18,28 +22,27 @@ export const Footer = () => {
             <div>Pinterest</div>
           </div>
           <div className={styles.footer__content}>
-            <div>Dona das gatinhas</div>
-            <div>Kirara</div>
-            <div>Mona</div>
-            <div>Klee</div>
+            <div>{t.footer.catOwner}</div>
+            {t.footer.catNames.map((name) => (
+              <div key={name}>{name}</div>
+            ))}
           </div>
           <div className={styles.footer__content}>
-            <div>FrontEnd</div>
-            <div>Next js</div>
-            <div>Sass</div>
-            <div>Figma</div>
+            <div>{t.footer.frontendTitle}</div>
+            {t.footer.frontendItems.map((item) => (
+              <div key={item}>{item}</div>
+            ))}
           </div>
           <div className={styles.footer__content}>
-            <div>BackEnd</div>
-            <div>Next js</div>
-            <div>Resend</div>
-            <div>Libs diversas</div>
+            <div>{t.footer.backendTitle}</div>
+            {t.footer.backendItems.map((item) => (
+              <div key={item}>{item}</div>
+            ))}
           </div>
         </div>
         <div className={styles.footer__bottom}>
-          <div>© 2024 LaryDev. All rights reserved</div>
-          <div className={styles.footer__bottom_links}>
-          </div>
+          <div>{t.footer.rights}</div>
+          <div className={styles.footer__bottom_links}></div>
         </div>
       </footer>
     </div>

@@ -6,11 +6,41 @@
   background: transparent;
 }
 
+.treeLeft {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 18vw;
+  left: -2vw;
+  top: 38%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.treeRight {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 22vw;
+  right: -6vw;
+  top: 68%;
+  transform: rotate(-95deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .treeLeft,
+  .treeRight {
+    display: none;
+  }
+}
+
 .title {
   max-width: 800px;
   margin: 0 auto 2.5rem;
   text-align: left;
-  color: var(--section-heading);
+  color: var(--sky-text);
   font-size: 1.5rem;
   transition: color 0.8s ease;
 }
@@ -174,6 +204,20 @@
 @media (max-width: 700px) {
   .timeline {
     margin-top: -160px;
+  }
+
+  .title {
+    display: inline-block;
+    color: #3a2a20;
+    background: rgba(255, 246, 235, 0.62);
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    :global(html[data-daytime="night"]) & {
+      background: rgba(20, 38, 61, 0.62);
+      color: #eef2fa;
+    }
   }
 
   .steps {

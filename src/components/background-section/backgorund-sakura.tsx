@@ -37,6 +37,13 @@ export const SectionSakura = () => {
         height={703}
         alt="Tree Sakura"
       />
+      <Image
+        priority
+        src="/imagens/background/sakura.svg"
+        width={330}
+        height={218}
+        alt="Tree Sakura"
+      />
     </section>
   );
 };

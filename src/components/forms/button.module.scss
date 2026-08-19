@@ -1,31 +1,3 @@
-.btn_link {
-  color: #fff;
-  width: 100%;
-  padding: 1rem 0rem;
-  text-align: center;
-  border-radius: 5px;
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: filter 0.3s ease; // Transição suave
-
-  svg {
-    margin-right: 0.5rem;
-  }
-  &:hover {
-    color: #fff;
-    filter: brightness(1.4); // Escurece o botão em 20% ao passar o mouse
-  }
-    &:focus-visible {
-        outline: 2px solid #e13a4b;
-        outline-offset: 4px;
-        border-radius: 4px;
-         color: #fff;
-    }
-}
-
 $cyan: #e13a4e;
 $dark: #ffffff;
 $borderW: 2px;
@@ -35,10 +7,14 @@ $borderW: 2px;
   z-index: 1;
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   padding: 1rem 0;
-  color: $cyan;
+  color: var(--btn-color, #{$cyan});
 
   font-weight: bold;
   background-color: transparent;
@@ -47,6 +23,10 @@ $borderW: 2px;
   transition: color 0.5s;
   cursor: pointer;
   border-radius: 5px;
+
+  svg {
+    margin-right: 0.5rem;
+  }
 
       &:focus-visible {
         outline: 2px solid #e13a4b;
@@ -62,7 +42,7 @@ $borderW: 2px;
     top: 0;
     width: 100%;
     height: 100%;
-    border: $borderW solid $cyan;
+    border: $borderW solid var(--btn-color, #{$cyan});
     border-radius: 5px;
   }
 
@@ -116,7 +96,7 @@ $borderW: 2px;
     top: $borderW;
     width: 100% / $numOfBlobs;
     height: 100%;
-    background: $cyan;
+    background: var(--btn-color, #{$cyan});
     border-radius: 100%;
     transform: translate3d(0, 150%, 0) scale(1.7);
     transition: transform 0.45s;

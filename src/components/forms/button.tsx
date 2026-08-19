@@ -20,19 +20,34 @@ interface RegularButtonProps
 
 type ButtonProps = AnchorButtonProps | RegularButtonProps;
 
+const BlobBackground = () => (
+  <span className={styles.blob_btn__inner}>
+    <span className={styles.blob_btn__blobs}>
+      <span className={styles.blob_btn__blob}></span>
+      <span className={styles.blob_btn__blob}></span>
+      <span className={styles.blob_btn__blob}></span>
+      <span className={styles.blob_btn__blob}></span>
+    </span>
+  </span>
+);
+
 export const Button = ({
   children,
   color,
   component = "button",
   ...props
 }: ButtonProps) => {
-  const commonStyles = { backgroundColor: color };
+  const commonStyles = { "--btn-color": color } as React.CSSProperties;
 
   if (component === "a" && "href" in props) {
     return (
-      <Link className={styles.btn_link} style={commonStyles} {...props}>
-        {children}
-      </Link>
+      <>
+        <Link className={styles.blob_btn} style={commonStyles} {...props}>
+          {children}
+          <BlobBackground />
+        </Link>
+        <GooFilter />
+      </>
     );
   } else {
     return (
@@ -43,15 +58,7 @@ export const Button = ({
           {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
         >
           {children}
-
-          <span className={styles.blob_btn__inner}>
-            <span className={styles.blob_btn__blobs}>
-              <span className={styles.blob_btn__blob}></span>
-              <span className={styles.blob_btn__blob}></span>
-              <span className={styles.blob_btn__blob}></span>
-              <span className={styles.blob_btn__blob}></span>
-            </span>
-          </span>
+          <BlobBackground />
         </button>
         <GooFilter />
       </>

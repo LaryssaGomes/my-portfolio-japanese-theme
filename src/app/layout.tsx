@@ -3,6 +3,7 @@ import Script from "next/script";
 
 import { font_display, font_body } from "./fonts";
 import { TimeThemeUpdater } from "@/components/time-theme/TimeThemeUpdater";
+import { LanguageProvider } from "@/i18n/LanguageContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ export default function RootLayout({
           {SET_INITIAL_DAYTIME_SCRIPT}
         </Script>
         <TimeThemeUpdater />
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

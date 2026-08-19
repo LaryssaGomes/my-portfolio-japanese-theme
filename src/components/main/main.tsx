@@ -1,14 +1,19 @@
+"use client";
 import React from "react";
 import styles from "./main.module.scss";
 import Image from "next/image";
 import clsx from "clsx";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Main = () => {
+  const { t } = useLanguage();
+
   return (
     <main className={styles.mainContainer}>
       <div className={styles.stars} aria-hidden="true" />
       <h1 className={styles.heading}>
-        Olá, eu sou <span className={styles.nameHighlight}>Laryssa Gomes</span>
+        {t.hero.greeting}{" "}
+        <span className={styles.nameHighlight}>Laryssa Gomes</span>
       </h1>
       <Image
         priority
