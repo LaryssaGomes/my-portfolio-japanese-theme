@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/forms/button";
@@ -7,12 +6,15 @@ import styles from "./about-me.module.scss";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const AboutMe = () => {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
 
   const handleDownload = () => {
+    const isEnglish = locale === "en";
     const link = document.createElement("a");
-    link.href = "/curriculo.pdf"; // Caminho do seu arquivo PDF na pasta public
-    link.download = "Laryssa_Gomes_Curriculo.pdf"; // Nome do arquivo baixado
+    link.href = isEnglish ? "/curriculo-en.pdf" : "/curriculo.pdf";
+    link.download = isEnglish
+      ? "Laryssa_Gomes_Resume.pdf"
+      : "Laryssa_Gomes_Curriculo.pdf";
     document.body.appendChild(link); // Necessário para Firefox
     link.click();
     document.body.removeChild(link); // Limpar o elemento após o clique
@@ -23,7 +25,6 @@ const AboutMe = () => {
       <h3>{t.about.title}</h3>
       <div className={styles.aboutMeContent}>
         <Image
-          priority
           src="/imagens/myPhoto.jpeg"
           width={250}
           height={250}

@@ -39,7 +39,6 @@ export const CardProject: React.FC<CardProjectProps> = ({
       <div className={styles.box_projeto}>
         <div className={styles.box_projeto_card}>
           <Image
-            priority
             src={image.url}
             width={image.width}
             height={image.height}

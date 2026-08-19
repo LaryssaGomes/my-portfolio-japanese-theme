@@ -7,49 +7,42 @@ const BackgroundImages = () => {
     <div className={styles.backgroundImages}>
       <div className={styles.details}>
         <Image
-          priority
           src="/imagens/background/cloud-01.svg"
           width={500}
           height={500}
           alt="Cloud"
         />
         <Image
-          priority
           src="/imagens/background/cloud-02.svg"
           width={500}
           height={500}
           alt="Cloud"
         />
         <Image
-          priority
           src="/imagens/background/cloud-02.svg"
           width={500}
           height={500}
           alt="Cloud"
         />
         <Image
-          priority
           src="/imagens/background/cloud-03.svg"
           width={500}
           height={500}
           alt="Cloud"
         />
         <Image
-          priority
           src="/imagens/background/cloud-03.svg"
           width={500}
           height={500}
           alt="Cloud"
         />
         <Image
-          priority
           src="/imagens/background/cloud-03.svg"
           width={500}
           height={500}
           alt="Cloud"
         />
         <Image
-          priority
           src="/imagens/background/cloud-04.svg"
           width={194}
           height={105}
@@ -57,28 +50,24 @@ const BackgroundImages = () => {
         />
         <div className={styles.details_mobile}>
           <Image
-            priority
             src="/imagens/background/cloud-03.svg"
             width={500}
             height={500}
             alt="Cloud"
           />
           <Image
-            priority
             src="/imagens/background/cloud-03.svg"
             width={500}
             height={500}
             alt="Cloud"
           />
           <Image
-            priority
             src="/imagens/background/cloud-03.svg"
             width={500}
             height={500}
             alt="Cloud"
           />
           <Image
-            priority
             src="/imagens/background/cloud-04.svg"
             width={194}
             height={105}
