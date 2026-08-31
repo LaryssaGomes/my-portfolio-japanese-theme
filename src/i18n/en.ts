@@ -43,7 +43,7 @@ export const en: Dictionary = {
       },
       {
         title: "Databases",
-        items: ["MongoDB", "PostgreSQL", "MySQL"],
+        items: ["MongoDB", "PostgreSQL", "MySQL", "Redis (cache & queues)"],
       },
       {
         title: "Testing",
@@ -51,7 +51,7 @@ export const en: Dictionary = {
       },
       {
         title: "Tools & Others",
-        items: ["GitHub/Git", "Linux", "WordPress", "Puppeteer", "Web Crawler", "AWS"],
+        items: ["GitHub/Git", "Linux", "WordPress", "Puppeteer", "Web Crawler", "AWS (IAM, EC2, CloudWatch)", "CI/CD", "Docker"],
       },
       {
         title: "Methodologies",
@@ -83,6 +83,7 @@ export const en: Dictionary = {
           "Implement conflict-sensitive business rules (e.g., resolving cashback conflicts between automatic and activated promotions, ensuring operational uniqueness of promotions per partner).",
           "Define and safely execute production data migrations.",
           "Work across the full feature lifecycle: requirements gathering, modeling, implementation, QA, and post-deploy monitoring.",
+          "Configure and manage AWS infrastructure resources (IAM, EC2, CloudWatch) and CI/CD pipelines for platform deployment and monitoring.",
         ],
       },
       {
