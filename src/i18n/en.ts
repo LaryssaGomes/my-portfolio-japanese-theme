@@ -51,7 +51,7 @@ export const en: Dictionary = {
       },
       {
         title: "Tools & Others",
-        items: ["GitHub/Git", "Linux", "WordPress", "Puppeteer", "Web Crawler", "AWS (IAM, EC2, CloudWatch, Lambda)", "CI/CD", "Docker"],
+        items: ["GitHub/Git", "Linux", "WordPress", "Puppeteer", "Web Crawler", "AWS (IAM, EC2, CloudWatch, Lambda, CloudFront)", "CI/CD", "Docker"],
       },
       {
         title: "Methodologies",

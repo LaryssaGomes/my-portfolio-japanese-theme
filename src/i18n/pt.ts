@@ -51,7 +51,7 @@ export const pt: Dictionary = {
       },
       {
         title: "Ferramentas & Outros",
-        items: ["GitHub/Git", "Linux", "WordPress", "Puppeteer", "Webcrawler", "AWS (IAM, EC2, CloudWatch, Lambda)", "CI/CD", "Docker"],
+        items: ["GitHub/Git", "Linux", "WordPress", "Puppeteer", "Webcrawler", "AWS (IAM, EC2, CloudWatch, Lambda, CloudFront)", "CI/CD", "Docker"],
       },
       {
         title: "Metodologias",
@@ -83,7 +83,7 @@ export const pt: Dictionary = {
           "Implemento regras de negócio sensíveis a conflito (ex.: resolução de cashback entre promoções automáticas e ativadas, unicidade operacional de promoções por parceiro).",
           "Defino e executo migrações de dados em produção com segurança.",
           "Atuo em todo o ciclo de uma feature: levantamento de regras, modelagem, implementação, QA e acompanhamento pós-deploy.",
-          "Configuro e gerencio recursos de infraestrutura na AWS (IAM, EC2, CloudWatch, Lambda) e pipelines de CI/CD para deploy e monitoramento da plataforma.",
+          "Configuro e gerencio recursos de infraestrutura na AWS (IAM, EC2, CloudWatch, Lambda, CloudFront) e pipelines de CI/CD para deploy e monitoramento da plataforma.",
         ],
       },
       {
