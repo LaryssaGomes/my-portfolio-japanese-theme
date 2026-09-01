@@ -158,6 +158,11 @@ export const pt: Dictionary = {
         description:
           "Netflix Clone é uma aplicação web desenvolvida com React.js que recria a interface visual da página inicial da Netflix. O objetivo do projeto é oferecer uma experiência visual semelhante à plataforma de streaming, utilizando dados fornecidos pela API TMDB. A aplicação exibe uma variedade de filmes e séries de TV, organizados em categorias como 'Populares' e 'Recomendados'. A interface é responsiva, garantindo uma navegação fluida em diferentes dispositivos, desde desktops até smartphones.",
       },
+      {
+        title: "NestJS Ride-Hailing Microservices",
+        description:
+          "Plataforma de caronas construída com arquitetura de microsserviços em NestJS, simulando o backend de um app estilo Uber. O api-gateway recebe as requisições do cliente e se comunica de forma assíncrona via RabbitMQ com os serviços de authentications (autenticação e cadastro), rider (dados de corridas e coordenadas) e logging (auditoria de eventos), cada um com seu próprio banco (PostgreSQL e MongoDB). O deploy é automatizado via CI/CD com GitHub Actions, que a cada push na main atualiza o código e sobe os containers Docker na VM de produção. O projeto inclui uma demo ao vivo com visualização em tempo real do fluxo de mensagens entre os serviços.",
+      },
     ],
   },
   contact: {

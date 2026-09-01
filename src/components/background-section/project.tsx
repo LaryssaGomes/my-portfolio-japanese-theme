@@ -43,6 +43,23 @@ const PROJECT_META = [
       height: 535,
     },
   },
+  {
+    tags: [
+      { name: "NestJS", color: "#E0234E" },
+      { name: "RabbitMQ", color: "#FF6600" },
+      { name: "PostgreSQL", color: "#336791" },
+      { name: "MongoDB", color: "#47A248" },
+      { name: "Docker", color: "#0db7ed" },
+      { name: "CI/CD", color: "#2088FF" },
+    ],
+    infoLink: "https://github.com/LaryssaGomes/nestjs-ride-hailing-microservices",
+    projectLink: "https://rides.catverse.com.br/demo",
+    image: {
+      url: "/imagens/projetos/ride_hailing.webp",
+      width: 900,
+      height: 578,
+    },
+  },
 ];
 
 export const Project = () => {
