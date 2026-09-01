@@ -31,20 +31,6 @@ const PROJECT_META = [
   },
   {
     tags: [
-      { name: "React", color: "#cc34da" },
-      { name: "Css", color: "#bb5418" },
-    ],
-    infoLink: "https://github.com/LaryssaGomes/clone-netflix",
-    projectLink:
-      "https://clone-netflix-o0dvwzxh2-laryssagomes-projects.vercel.app/watch/239526",
-    image: {
-      url: "/imagens/projetos/netlfix_clone.webp",
-      width: 900,
-      height: 535,
-    },
-  },
-  {
-    tags: [
       { name: "NestJS", color: "#E0234E" },
       { name: "RabbitMQ", color: "#FF6600" },
       { name: "PostgreSQL", color: "#336791" },

@@ -154,11 +154,6 @@ export const en: Dictionary = {
           "This project is a responsive landing page built with Next.js and styled-components, created as part of a technical challenge. The goal was to build a clear, modern, and functional interface, focused on performance and accessibility.\n\nWith this project, I was selected and won 1 year of access to the Rocketseat platform in 2023. This achievement marked an important step in my growth as a full stack developer, further strengthening my foundation in modern technologies such as React, Next.js, and TypeScript.",
       },
       {
-        title: "Netflix Clone",
-        description:
-          "Netflix Clone is a web application built with React.js that recreates the visual interface of the Netflix homepage. The project's goal is to offer a viewing experience similar to the streaming platform, using data provided by the TMDB API. The application displays a variety of movies and TV shows, organized into categories such as 'Popular' and 'Recommended'. The interface is responsive, ensuring smooth navigation across different devices, from desktops to smartphones.",
-      },
-      {
         title: "NestJS Ride-Hailing Microservices",
         description:
           "A ride-hailing platform built with a NestJS microservices architecture, simulating the backend of an Uber-style app. The api-gateway receives client requests and communicates asynchronously via RabbitMQ with the authentications (auth and sign-up), rider (ride data and coordinates), and logging (event auditing) services, each with its own database (PostgreSQL and MongoDB). Deployment is automated via a GitHub Actions CI/CD pipeline that updates the code and rebuilds the Docker containers on the production VM on every push to main. The project includes a live demo with real-time visualization of the message flow between services.",
