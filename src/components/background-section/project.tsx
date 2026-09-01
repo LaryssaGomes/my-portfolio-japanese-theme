@@ -11,9 +11,10 @@ const PROJECT_META = [
       { name: "Styles-component", color: "#202147" },
       { name: "Figma", color: "#f35c5c" },
       { name: "Puppeteer", color: "#5415ac" },
+      { name: "GraphQL", color: "#e10098" },
     ],
     infoLink: "https://github.com/LaryssaGomes/Nextjs-bird",
-    projectLink: "https://nextjs-bird-exfhmmgon-laryssagomes.vercel.app/",
+    projectLink: "https://nextjs-bird.vercel.app/",
     image: { url: "/imagens/projetos/bird.png", width: 424, height: 585 },
   },
   {

@@ -39,6 +39,7 @@ export const en: Dictionary = {
           "Java/Spring Boot",
           "Go",
           "REST APIs",
+          "GraphQL",
         ],
       },
       {
@@ -146,7 +147,7 @@ export const en: Dictionary = {
       {
         title: "Nextjs-bird",
         description:
-          "Nextjs-bird is a dynamic site built with Next.js, using data scraped from two websites via Puppeteer and organized in a CMS. The project includes a gallery of historical photos, integration with external APIs, and a search tool for bird identification. The entire application design was crafted to deliver an intuitive and engaging experience.",
+          "Nextjs-bird is a dynamic site built with Next.js, using data scraped from two websites via Puppeteer and organized in a CMS (DatoCMS), queried through its GraphQL API. The project includes a gallery of historical photos, integration with external APIs, and a search tool for bird identification. The entire application design was crafted to deliver an intuitive and engaging experience.",
       },
       {
         title: "Landing Page — Ponto Saber",

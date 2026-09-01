@@ -39,6 +39,7 @@ export const pt: Dictionary = {
           "Java/Spring Boot",
           "Go",
           "APIs REST",
+          "GraphQL",
         ],
       },
       {
@@ -146,7 +147,7 @@ export const pt: Dictionary = {
       {
         title: "Nextjs-bird",
         description:
-          "Nextjs-bird é um site dinâmico desenvolvido com Next.js, usando dados extraídos de dois sites via Puppeteer e organizados em um CMS. O projeto inclui uma galeria de fotos históricas, integração com APIs externas, e uma ferramenta de pesquisa para identificação de aves. Todo o design da aplicação foi criado para oferecer uma experiência intuitiva e envolvente.",
+          "Nextjs-bird é um site dinâmico desenvolvido com Next.js, usando dados extraídos de dois sites via Puppeteer e organizados em um CMS (DatoCMS), consultado via API GraphQL. O projeto inclui uma galeria de fotos históricas, integração com APIs externas, e uma ferramenta de pesquisa para identificação de aves. Todo o design da aplicação foi criado para oferecer uma experiência intuitiva e envolvente.",
       },
       {
         title: "Landing Page — Ponto Saber",
