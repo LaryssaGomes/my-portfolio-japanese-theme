@@ -92,9 +92,11 @@ export const CardProject: React.FC<CardProjectProps> = ({
                   {viewCodeLabel}
                 </Button>
               )}
-              <Button color="#154363" href={projectLink} component="a">
-                {viewSiteLabel}
-              </Button>
+              {projectLink && (
+                <Button color="#154363" href={projectLink} component="a">
+                  {viewSiteLabel}
+                </Button>
+              )}
             </div>
           </div>
         </div>
