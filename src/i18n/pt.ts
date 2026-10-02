@@ -84,9 +84,18 @@ export const pt: Dictionary = {
     title: "Jornada Profissional",
     items: [
       {
+        role: "Desenvolvedora Backend",
+        company: "Trino Pagamentos",
+        period: "out/2026 — atual",
+        mode: "Híbrido",
+        bullets: [
+          "Atuo no desenvolvimento backend da plataforma de pagamentos.",
+        ],
+      },
+      {
         role: "Desenvolvedora Sênior",
         company: "Aposta Premia",
-        period: "mar/2026 — atual",
+        period: "mar/2026 — set/2026",
         mode: "Remoto",
         bullets: [
           "Lidero a evolução arquitetural da plataforma, conduzindo a migração de um monolito Node.js para uma arquitetura distribuída baseada em microsserviços.",

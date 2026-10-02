@@ -84,9 +84,18 @@ export const en: Dictionary = {
     title: "Professional Journey",
     items: [
       {
+        role: "Backend Developer",
+        company: "Trino Pagamentos",
+        period: "Oct 2026 — Present",
+        mode: "Hybrid",
+        bullets: [
+          "Work on backend development for the payments platform.",
+        ],
+      },
+      {
         role: "Senior Developer",
         company: "Aposta Premia",
-        period: "Mar 2026 — Present",
+        period: "Mar 2026 — Sep 2026",
         mode: "Remote",
         bullets: [
           "Lead the platform's architectural evolution, driving the migration from a Node.js monolith to a distributed microservices-based architecture.",
